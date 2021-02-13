@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Insert Generator</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <div class='viewport'>
+        <div class='instructions'>
+            <p class='instructions__text'></p>
+        </div>
+        <button href='#' class='instructions__btn'>Press to Confirm</button>
+        <button href='#' class='instructions__btn instructions__btn--clip' onclick="copyRangeToClipboard(`.${domStrings.processingContainer}`)">Copy inserts to clipboard</button>
+        
+        <div class='processing__added-settings'></div>
+        <div class='processing' id='processing-node'>
+            <textarea class='processing__textarea' placeholder='Enter text here...'></textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/insertGenerator.js"></script>
+</body>
+
+</html>
